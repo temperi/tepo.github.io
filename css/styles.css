@@ -79,3 +79,33 @@ footer {
  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     
 }
+.project {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.project-content {
+    flex: 1;
+}
+
+.project img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .project img {
+        max-width: 100%;
+        order: -1;
+    }
+}
